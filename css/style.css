@@ -1,0 +1,842 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***********************home//////////////////////*/
+body {
+    height: 6000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+.header{
+    background-color: rgb(120, 120, 120);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+} 
+.ul1{
+float: right;
+}
+.ul1 li{
+display: inline-block;
+margin: 15px 25px 0px 0px;
+    }
+.ul1 li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+font-weight: bold;
+ }
+ .div1{
+    position: relative;
+    display: inline-block;
+    width: 20em;
+    height: 30px;
+}
+ .input1{
+width: 20em;
+height: 35px;
+border-radius: 20px;
+margin: 10px 0px 0px 80px;
+position: absolute;
+ }
+ .i1{
+     color: white;
+     position: absolute;
+     font-size: 25px;
+     margin: 10px 0px 0px 20px;;
+ }
+.i2{
+     position: absolute;
+     top: 90%;
+     left: 30%;
+     transform: translate(-50%,-50%);
+     color:gray;
+  }
+  .Home{
+      width: 100%;
+      height: 100vh;
+      background-image: url('../photos/background1.webp');
+          position: relative; 
+  } 
+  .home-overlay{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0,0,0, .7);
+  }
+  .Home-content{
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      left:50% ;
+      transform: translate(-50%,-50%);
+      text-align: center;
+  }
+  .title1{
+      font-size:60px ;
+      color: white;
+      text-transform: uppercase;
+  }
+  .Home-P{
+      font-size:15px ;
+      letter-spacing: 2px;
+     color: white;
+     opacity: .8;
+  }
+  .Home-btn1,.home-btn2{
+  width: 150px;
+  height: 60px;
+  background-color:white;
+  cursor: pointer;
+  border-radius: 20px;
+  color: black;
+  text-transform: capitalize;
+  margin-top: 10px;
+  }
+  .Home-btn2{
+  margin-left: 10px;
+  background-color:  #6195ff;
+  color: white;
+  }
+  span{
+     font-size: 25px;
+      }
+  .Home-btn2:hover,.Home-btn1:hover{
+       opacity: .5;
+   }  
+      /*/////////////////dection1/////////////////////*/
+   .title,.section-title{
+       text-align: center;
+       font-size: 40px;
+      margin-top: 50px;
+   }
+   .line{
+       margin: auto;
+       background-color:rgba(0, 0, 255, 0.651);
+       width: 100px;
+       height: 5px;
+       margin-top: 30px;
+   }
+   .sections{
+ margin: auto;
+       width: 80%;
+    height: 500px;
+
+   }
+   .section1{
+       width: 25%;
+       height: 230px;
+       border: 1px solid blue;
+       margin:80px 60px 0px 30px;
+       border-radius: 15px;
+       position: relative;
+       display: inline-block;
+   }
+   .iconssection1{
+       color:  #6195ff;
+    padding:20px 0px 0px 40%;
+   }
+.h3section1,.psection1{
+text-align: center;
+margin: 20px 0px 20px 0px;
+font-size: 25px;
+   }
+   .psection1{
+       opacity: .5;
+     font-size: 20px;
+   }
+   .asection1{
+       margin-left:35%;
+       color: #6195ff;
+   }
+   .section1:hover .iconssection1 ,.section1:hover .asection1{
+    color: darkblue;
+           }
+
+   .section1:after{
+       content: "";
+       position: absolute;
+       height: 0;
+      width: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    transition: 1s;
+       }
+
+.section1:hover::after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+   }
+.section1:hover .psection1{
+opacity: 1;
+           }
+.section1:hover .h3section1{
+color: blue;               }
+/*////////////////////section2///////////////////*/
+.section2{
+    background: rgba(135, 206, 250, 0.226);
+    width: 100%;
+    height: 800px;
+}
+.section2-content{
+    width: 90%;
+    margin: auto;
+    margin-top: -100px;
+}
+.section2-item{
+    width: 30%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    margin: 0px -30px;
+    transform: translate(50%,50%);
+}
+.section2-item img{
+    width: 80%;
+    width: 330px;
+    height: 300px;
+    margin-right: 10px;
+}
+.section2-item .layer-content{   
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.section2-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content .layer-info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.layer-content .category{
+    color: #6195ff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top: 10px;
+}
+.layer-content-title{
+font-size: 20px;
+color: #fff;
+margin-bottom: 20px;
+position: relative;
+top: 10px;
+}
+.layer-content a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+    color: #fff;
+}
+.layer-content a i{
+    line-height: 40px;
+}
+/*///////////////////////////section3///////////////////////*/
+.Section3-content{
+    width: 80%;
+    height: 800px;
+position: relative;
+    margin: auto;
+}
+.sec3icon3,.sec3icon2{
+   font-size: 25px;
+   border-radius: 10px;
+}
+.aaaaa{
+    position: absolute;
+   left: 50px ;
+   top: 25px;
+   font-size: 30px;
+   color: rgb(99, 99, 216);
+} 
+.section3-div{
+   float: left;
+    background-origin: 1px solid blue;
+    width: 25%;
+    height: 25%;
+    border: 1px solid blue;
+    border-radius: 15px;
+    margin: 50px;
+ }
+.section3-div p,.section3-div i, .section3-div h2{
+display: inline;
+}
+ .section3-div h2{
+padding: 15px;
+margin-top: 40px;
+
+} 
+ .section3-div p{
+
+display: inline-block;
+opacity: .5;
+padding-top: 10px;
+} 
+.section3-text h2  i{
+    color: blue;
+font-size: 25px;
+margin-left: -40px;
+height: 10px;
+} 
+.section3-text{
+    margin-left: 35px;
+    padding-top: 20px;
+}
+.section3-div{
+position: relative;
+}
+.section3-text:after{
+    content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 0%;
+background-color: rgba(0, 0, 0, 0.603);
+transition: .5s;
+}
+.section3-text:hover::after{
+    width: 100%;
+height: 100%;
+ opacity: .7;
+}
+.section3-text:hover h2{
+    color: blue;
+ }
+ .section3-text:hover p{
+ opacity: 1;
+ color: black;
+font-weight: bold;
+ }
+ /*******************************section5/////////////////////*/
+ .sec5container{
+    width: 80%;
+    margin: auto; 
+    margin-top: -150px;  
+}
+.parentsec5{
+    height: 100vh;
+overflow: auto;
+padding-top: 50px;
+margin-top: 90px;
+}
+.divchooseus1{
+float: left;
+width: 50%;
+}
+.divchooseus2{
+width: 50%;
+float: left;
+padding-left:187px;
+}
+.sec5title{
+padding-top: 40px;
+}
+
+.iconinfo{
+color: rgb(108, 108, 214);
+padding-top: 20px;
+}
+.sec5h2{
+text-transform: capitalize;
+font-size: 40px;
+}
+.sec5hr{
+width: 70px;
+border: 2px solid rgb(108, 108, 214);
+margin-top: 10px;
+}
+.sec5p{
+color: rgb(178, 178, 180);
+padding-top: 40px;
+
+}
+.sec5listul{
+list-style: none;
+padding-top: 25px;
+}
+.sec5listul li{
+margin-bottom: 15px;
+color: rgb(145, 142, 142);
+}
+.sec5bullet{
+text-align: center;
+list-style: none;
+}
+.sec5bullet li.active{
+background-color: rgb(147, 147, 235);
+}
+.sec5bullet li{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+margin: 10px 5px;
+display: inline-block;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: rgb(174, 174, 175);
+}
+.sec5bullet li:hover{
+background-color: rgb(147, 147, 235);
+}
+/****************************section 6/////////////////////////////*/
+ .sec6parent{
+    width: 100%;
+    height: 400px;
+    background-image: url(../photos/Hp1.jpeg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sec6-container{
+    width: 80%;
+    margin: auto;
+}
+.sec6items{
+    padding-top: 150px;
+   overflow: auto;
+   
+}
+.sec6item{
+    float: left;
+    text-align: center;
+    width: 25%;   
+}
+ .sec6-item-icon{
+    color: #989ef0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.sec6-item-title{
+    color: #fff;
+    
+}
+.sec6-item-text{
+    color: #fff;
+     
+}
+/*/////////////////////////sec7//////////////////////*/
+ .sec7 {
+    margin-bottom: -150px;
+    width: 100%;
+    height: 800px;
+}
+.div1sec7 {
+    margin-left: 200px;
+    display: inline;
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.div2sec7,
+.div3sec7,
+.div4sec7 {
+    position: relative; /* Essential for the pseudo-elements */
+    width: 350px;
+    height: 400px;
+    border: blue 1px solid;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 50px;
+    margin-top: 50px;
+    overflow: hidden; /* Prevent pseudo-element overflow */
+}
+.div3sec7 {
+    margin: 0px 60px 0px 60px;
+}
+.div5sec7 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px rgba(0, 0, 255, 0.473) solid;
+}
+.p5sec7 {
+    line-height: 80px;
+}
+.strsec7 {
+    font-size: 35px;
+    padding-bottom: -5px;
+}
+.btnsec7 {
+    width: 200px;
+    height: 40px;
+    border: 3px rgba(0, 0, 255, 0.411) solid;
+    color: black;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.p6sec7 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p2sec7,
+.p3sec7,
+.p4sec7 {
+    font-weight: bold;
+    line-height: 40px;
+}
+.div2sec7:after,
+.div3sec7:after,
+.div4sec7:after {
+    content: ""; /* Corrected empty content */
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0; /* Start from the top */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust color and transparency */
+    transition:  0.5s ;
+    z-index: 2; /* Ensure it overlays other content */
+}
+.div2sec7:hover::after,
+.div3sec7:hover::after,
+.div4sec7:hover::after {
+    height: 100%; /* Expand to full height on hover */
+}
+.div2sec7 p,
+.div3sec7 p,
+.div4sec7 p,
+.div2sec7 button,
+.div3sec7 button,
+.div4sec7 button,
+.div5sec7{
+    position: relative;
+    z-index: 3; /* Ensure content stays above the overlay */
+}
+.div2sec7:hover .p6sec7,
+.div3sec7:hover .p6sec7,
+.div4sec7:hover .p6sec7{
+    color: darkblue;
+}
+.div2sec7:hover .div5sec7,
+.div3sec7:hover .div5sec7,
+.div4sec7:hover .div5sec7{
+ border-color: blue;
+}
+/*//////////////////////////////////section9///////////////////////*/
+.parent-about{
+    width: 100%;
+    height: 400px;
+    background-image: url(../photos/laptop.jpeg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 130px;
+}
+.overlay-about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+     background-color: rgba(0, 0, 0, 0.5); 
+}
+.container-about{
+    width: 80%;
+    margin: auto;
+}
+.about-content{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+}
+.about-item1{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.about-item1-info{
+    text-transform: capitalize;
+    padding: 130px 40px 10px 150px;
+position: relative;
+line-height: 1.4;
+  font-weight: bold;
+}
+.about-item1-info img{
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 120px;
+}
+.about-p{
+margin: 0px 30px 0px 50px;
+line-height: 1.4;
+text-transform: capitalize;
+color: black;
+font-weight: bold;
+}
+.about-item1-info h3{
+font-size: 30px;
+color: #fff;
+}
+.about-item1-info span{
+color: rgb(5, 3, 128);
+font-size: 20px;
+}
+.team-title{
+    padding-top: 120px;
+}
+.team-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.containersec9 {
+    width: 80%;
+    margin: auto;
+ height: 500px;
+}
+.team-contentsec9 {
+   margin-top: 20px;
+}
+.team-itemsec9{
+    float: left;
+    background-color: rgb(187, 187, 187);
+    width: 30%;
+    padding: 14px  18px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+.team-item2sec9 {
+    margin: 0px  5%;
+}
+.team-imgsec9 {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-imgsec9  .imgsec9 {
+    width: 100%;
+}
+.team-overleysec9 {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+  background-color: rgba(0, 0, 0, 0.527); 
+  visibility: hidden;
+}
+.team-overleysec9 a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.281);
+    color: #fff;
+    font-size: 23px ;
+    margin-left: auto ;
+    visibility: hidden;
+}
+.team-overleysec9  a  i {
+    line-height: 40px ;
+}
+.team-info-titlesec9 {
+    text-transform: uppercase;
+    padding: 12px  0px;
+    color: rgb(58, 58, 58);
+}
+.team-info-sp1sec9 {
+    text-transform: uppercase;
+    color: grey;
+}
+.team-item1sec9:after,
+.team-item2sec9:after,
+.team-item3sec9:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0; /* Start from the top */
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.274); */
+    background-color: rgba(0, 0, 255, 0.137);
+    transition:  0.5s ;
+}
+.team-item1sec9:hover::after,
+.team-item2sec9:hover::after,
+.team-item3sec9:hover::after{
+    height: 100%; /* Expand to full height on hover */
+}
+.team-itemsec9:hover  .team-info-titlesec9 {
+    color: #fff;
+}
+.team-itemsec9:hover  .team-info-sp1sec9{
+    color: blue;
+}
+.team-itemsec9:hover .team-overleysec9 a{
+   visibility: visible;
+}
+.team-itemsec9:hover .team-overleysec9 {
+   visibility: visible; 
+}
+/*//////////////////////////////////section10/////////////////////*/
+.containersec10 {
+    width: 80%;
+    margin: auto;
+}
+.team-contentsec10 {
+   margin: auto;
+}
+.team-itemsec10{
+    float: left;
+    width: 30%;
+    padding: 20px  20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid blue;
+    height: 550px;
+} 
+.team-item2sec10 {
+    margin: 0px  5%;
+}
+.team-imgsec10 {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-imgsec10  .imgsec10 {
+    width: 90%;
+    height: 250px;
+    border-radius: 10px;
+}
+.team-info-titlesec10 {
+    text-transform: capitalize;
+    padding: 20px  0px;
+    color: rgb(58, 58, 58);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.team-info-psec10 {
+    text-transform: capitalize;
+    color: grey;
+font-weight: bold;
+padding-bottom: 15px;
+}
+.team-item1sec10:after,
+.team-item2sec10:after,
+.team-item3sec10:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0; /* Start from the top */
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.274); */
+    background-color: rgba(0, 0, 255, 0.137);
+    transition:  0.5s ;
+}
+.team-item1sec10:hover::after,
+.team-item2sec10:hover::after,
+.team-item3sec10:hover::after{
+    height: 100%; /* Expand to full height on hover */
+}
+.team-overleysec10 {
+padding: 30px 0px 5px 0px;
+
+}
+.team-overleysec10 a {
+    color: blue;
+    font-size: 20px ;
+    margin:0px 5px ;
+}
+.team-imgsec10,
+.team-overleysec10,
+.team-info-titlesec10,
+.team-info-psec10,
+.asec7{
+    position: relative;
+    z-index: 3; /* Ensure content stays above the overlay */
+}
+.team-itemsec10:hover  .team-info-titlesec10 {
+    color: whitesmoke;
+}
+.team-itemsec10:hover  .team-info-psec10{
+    color: blue;
+}
+.asec7{
+   text-decoration: none;
+
+}
+.iconsec7{
+    padding: 0px 5px;
+ }
+/*////////////////////////footer//////////////////// */
+    .footer{
+        width: 100%;
+        background-color: #d1d3f09c;
+        padding: 30px 0px;
+        margin-top: 700px;
+        margin-bottom: 0;
+    }
+    .content-footer{
+        margin: auto;
+        height: 300px;
+    width: 40%;
+    text-align: center;
+    }
+   .img-footer img{
+    width:250px;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    }
+    .ul-footer ul{
+        list-style: none;     
+    }
+    .ul-footer ul li{
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #9198f7;
+        color: #fff;
+        font-size: 30px;
+       padding-top: 11px;
+       margin-top: 20px;
+    }
+    .ul-footer p{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(100, 99, 99);
+    font-weight: bold;
+    padding-top: 20px;
+    }
+    .ul-footer ul li:hover{
+    background-color: #4e43e9;
+    transition: 0.5s;
+    }
